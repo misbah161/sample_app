@@ -8,6 +8,9 @@ gem 'therubyracer'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
+  gem 'spork-rails', '4.0.0'
+  gem 'guard-spork', '1.5.1'
+  gem 'childprocess', '0.3.9'
 end
 
 group :development do
@@ -17,6 +20,7 @@ end
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
+  gem 'webrat'
 end
 
 gem 'sass-rails', '4.0.1'
