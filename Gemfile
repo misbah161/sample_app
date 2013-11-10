@@ -5,6 +5,7 @@ ruby '2.0.0'
 gem 'rails', '4.0.1'
 gem 'execjs'
 gem 'therubyracer'
+gem 'protected_attributes'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
@@ -15,6 +16,7 @@ end
 
 group :development do
   gem 'sqlite3', '1.3.8'
+  gem 'annotate', '2.5.0'
 end
 
 group :test do
