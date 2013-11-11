@@ -1,5 +1,7 @@
 SampleApp::Application.routes.draw do
 
+  resources :users
+  
   root :to => 'pages#home'
   
   get '/contact', :to => 'pages#contact'
