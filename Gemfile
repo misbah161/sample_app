@@ -6,6 +6,7 @@ gem 'rails', '4.0.1'
 gem 'execjs'
 gem 'therubyracer'
 gem 'protected_attributes'
+gem 'gravatar_image_tag', '1.2.0'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
