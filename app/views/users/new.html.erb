@@ -1,28 +1,40 @@
 <h1>Sign up</h1>
 
 <%= form_for(@user) do |f| %>
-  <div class="field">
-    <%= f.label :name %><br/>
-    <%= f.text_field :name %>
-  </div>
+  <%= render 'shared/error_messages' %>
   
-  <div class="field">
-    <%= f.label :email %><br/>
-    <%= f.text_field :email %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :password %><br/>
-    <%= f.password_field :password %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :password_confirmation, "Confirmation" %><br/>
-    <%= f.password_field :password_confirmation %>
-  </div>
-  
-  <div class="actions">
-    <%= f.submit :signup %>
-  </div>
-  
+  <table id="signup_form">
+    <tr>
+      <div class="field">
+        <td><%= f.label :name %></td>
+        <td><%= f.text_field :name %></td>
+      </div>
+    </tr>
+    <div class="field">
+      <tr>
+        <td><%= f.label :email %></td>
+        <td><%= f.text_field :email %></td>
+      </tr>
+    </div>
+    
+    <div class="field">
+      <tr>
+        <td><%= f.label :password %></td>
+        <td><%= f.password_field :password %></td>
+      </tr>
+    </div>
+    
+    <div class="field">
+      <tr>
+        <td><%= f.label :password_confirmation, "Confirmation" %></td>
+        <td><%= f.password_field :password_confirmation %></td>
+      </tr>
+    </div>
+    
+    <div class="actions">
+      <tr>
+        <td colspan="2"><%= f.submit :signup %></td>
+      </tr>
+    </div>
+  </table>  
 <% end %>
