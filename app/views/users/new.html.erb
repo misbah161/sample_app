@@ -4,12 +4,13 @@
   <%= render 'shared/error_messages' %>
   
   <table id="signup_form">
-    <tr>
-      <div class="field">
+    <div class="field">
+      <tr>
         <td><%= f.label :name %></td>
         <td><%= f.text_field :name %></td>
-      </div>
-    </tr>
+      </tr>
+    </div>
+    
     <div class="field">
       <tr>
         <td><%= f.label :email %></td>
@@ -33,7 +34,7 @@
     
     <div class="actions">
       <tr>
-        <td colspan="2"><%= f.submit :signup %></td>
+        <td colspan="2"><%= f.submit "Sign up" %></td>
       </tr>
     </div>
   </table>  

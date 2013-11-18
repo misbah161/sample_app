@@ -1,0 +1,28 @@
+<h1>Sign in</h1>
+
+<%= form_for(:session, :url => sessions_path) do |f| %>
+  
+  <table id="signup_form">
+    <div class="field">
+      <tr>
+        <td><%= f.label :email %></td>
+        <td><%= f.text_field :email %></td>
+      </tr>
+    </div>
+    
+    <div class="field">
+      <tr>
+        <td><%= f.label :password %></td>
+        <td><%= f.password_field :password %></td>
+      </tr>
+    </div>
+    
+    <div class="actions">
+      <tr>
+        <td colspan="2"><%= f.submit "Sign in" %></td>
+      </tr>
+    </div>
+  </table>  
+<% end %>
+
+<p>New user? <%= link_to "Sign up now!", signup_path %></p>
